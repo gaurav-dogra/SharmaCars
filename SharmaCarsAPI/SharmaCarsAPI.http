@@ -1,0 +1,6 @@
+@SharmaCarsAPI_HostAddress = http://localhost:5229
+
+GET {{SharmaCarsAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -63,11 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
-    <Build Include="StoredProcedures\spUser_Delete.sql" />
-    <Build Include="StoredProcedures\spUser_Get.sql" />
-    <Build Include="StoredProcedures\spUser_GetAll.sql" />
-    <Build Include="StoredProcedures\spUser_Insert.sql" />
-    <Build Include="StoredProcedures\spUser_Update.sql" />
     <Build Include="Tables\UserHash.sql" />
     <Build Include="StoredProcedures\User\spUser_Delete.sql" />
     <Build Include="StoredProcedures\User\spUser_Get.sql" />

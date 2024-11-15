@@ -2,7 +2,7 @@
 @FirstName nvarchar(50),
 @LastName nvarchar(50)
 AS
-	begin
+begin
 	INSERT INTO dbo.[User] (FirstName, LastName) 
 	VALUES (@FirstName, @LastName);
 end

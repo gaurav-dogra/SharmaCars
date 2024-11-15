@@ -58,6 +58,8 @@
     <Folder Include="Properties" />
     <Folder Include="Tables" />
     <Folder Include="StoredProcedures" />
+    <Folder Include="StoredProcedures\User" />
+    <Folder Include="StoredProcedures\UserHash" />
   </ItemGroup>
   <ItemGroup>
     <Build Include="Tables\User.sql" />
@@ -66,5 +68,12 @@
     <Build Include="StoredProcedures\spUser_GetAll.sql" />
     <Build Include="StoredProcedures\spUser_Insert.sql" />
     <Build Include="StoredProcedures\spUser_Update.sql" />
+    <Build Include="Tables\UserHash.sql" />
+    <Build Include="StoredProcedures\User\spUser_Delete.sql" />
+    <Build Include="StoredProcedures\User\spUser_Get.sql" />
+    <Build Include="StoredProcedures\User\spUser_GetAll.sql" />
+    <Build Include="StoredProcedures\User\spUser_Insert.sql" />
+    <Build Include="StoredProcedures\User\spUser_Update.sql" />
+    <Build Include="StoredProcedures\UserHash\spUserHash_Get.sql" />
   </ItemGroup>
 </Project>

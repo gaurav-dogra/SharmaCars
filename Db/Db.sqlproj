@@ -80,6 +80,7 @@
     <Build Include="Tables\BodyType.sql" />
     <Build Include="Tables\Doors.sql" />
     <Build Include="Tables\Seats.sql" />
+    <Build Include="Tables\CategoryType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

@@ -74,6 +74,7 @@
     <Build Include="StoredProcedures\UserHash\spUserHash_Insert.sql" />
     <Build Include="Tables\VehicleType.sql" />
     <Build Include="Tables\RegisterationYear.sql" />
+    <Build Include="Tables\GearboxType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

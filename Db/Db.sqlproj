@@ -82,6 +82,7 @@
     <Build Include="Tables\Seats.sql" />
     <Build Include="Tables\CategoryType.sql" />
     <Build Include="Tables\EmissionClass.sql" />
+    <Build Include="Tables\EngineCapacity.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

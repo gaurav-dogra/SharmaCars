@@ -78,6 +78,7 @@
     <Build Include="Tables\FuelType.sql" />
     <Build Include="Tables\ServiceHistory.sql" />
     <Build Include="Tables\BodyType.sql" />
+    <Build Include="Tables\Doors.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

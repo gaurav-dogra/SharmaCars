@@ -79,6 +79,7 @@
     <Build Include="Tables\ServiceHistory.sql" />
     <Build Include="Tables\BodyType.sql" />
     <Build Include="Tables\Doors.sql" />
+    <Build Include="Tables\Seats.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

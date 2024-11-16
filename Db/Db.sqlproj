@@ -73,6 +73,7 @@
     <Build Include="StoredProcedures\UserHash\spUserHash_Update.sql" />
     <Build Include="StoredProcedures\UserHash\spUserHash_Insert.sql" />
     <Build Include="Tables\VehicleType.sql" />
+    <Build Include="Tables\RegisterationYear.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

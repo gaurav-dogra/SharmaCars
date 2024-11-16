@@ -84,6 +84,7 @@
     <Build Include="Tables\EmissionClass.sql" />
     <Build Include="Tables\EngineCapacity.sql" />
     <Build Include="Tables\Colour.sql" />
+    <Build Include="Tables\DriveType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

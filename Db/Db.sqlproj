@@ -77,6 +77,7 @@
     <Build Include="Tables\GearboxType.sql" />
     <Build Include="Tables\FuelType.sql" />
     <Build Include="Tables\ServiceHistory.sql" />
+    <Build Include="Tables\BodyType.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />

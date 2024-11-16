@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[FuelType]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [Type] VARCHAR(20) NOT NULL
+)

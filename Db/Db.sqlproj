@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{6bf77cbe-b559-4885-bba0-439f88cd54b7}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -72,5 +72,11 @@
     <Build Include="StoredProcedures\UserHash\spUserHash_Get.sql" />
     <Build Include="StoredProcedures\UserHash\spUserHash_Update.sql" />
     <Build Include="StoredProcedures\UserHash\spUserHash_Insert.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment1.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Db.publish.xml" />
   </ItemGroup>
 </Project>

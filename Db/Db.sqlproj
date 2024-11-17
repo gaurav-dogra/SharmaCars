@@ -86,11 +86,16 @@
     <Build Include="Tables\Colour.sql" />
     <Build Include="Tables\DriveType.sql" />
     <Build Include="Tables\VehicleImages.sql" />
+    <Build Include="Tables\Vehicle.sql" />
+    <Build Include="Tables\Status.sql" />
   </ItemGroup>
   <ItemGroup>
     <PostDeploy Include="Script.PostDeployment1.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Db.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="Db.refactorlog" />
   </ItemGroup>
 </Project>

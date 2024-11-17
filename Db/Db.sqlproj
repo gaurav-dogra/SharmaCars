@@ -78,8 +78,6 @@
     <Build Include="Tables\FuelType.sql" />
     <Build Include="Tables\ServiceHistory.sql" />
     <Build Include="Tables\BodyType.sql" />
-    <Build Include="Tables\Doors.sql" />
-    <Build Include="Tables\Seats.sql" />
     <Build Include="Tables\CategoryType.sql" />
     <Build Include="Tables\EmissionClass.sql" />
     <Build Include="Tables\EngineCapacity.sql" />

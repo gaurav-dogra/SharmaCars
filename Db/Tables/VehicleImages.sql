@@ -6,6 +6,6 @@
 	CONSTRAINT FK_VehicleImages_Vehicle FOREIGN KEY (VehicleId) REFERENCES Vehicle(Id)
 );
 
-CREATE UNIQUE INDEX UX_OneMainImagePerVehicle 
-ON VehicleImages (VehicleId, IsMainImage) 
-WHERE IsMainImage = 1;
+--CREATE UNIQUE INDEX UX_OneMainImagePerVehicle 
+--ON VehicleImages (VehicleId, IsMainImage) 
+--WHERE IsMainImage = 1;

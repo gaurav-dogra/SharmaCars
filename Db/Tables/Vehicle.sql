@@ -18,7 +18,7 @@
     [Category] INT NULL, 
     [EmissionClass] INT NULL, 
     [EngineCapacity] INT NULL, 
-    [BatteryRance] INT NULL, 
+    [BatteryRange] INT NULL, 
     [Description] NVARCHAR(1000) NULL, 
     [Colour] INT NULL, 
     [DriveType] INT NULL, 

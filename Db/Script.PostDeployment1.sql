@@ -177,6 +177,18 @@ VALUES ('1980'),
        ('2030 (30 reg)'),
        ('2030 (80 reg)');
 
+INSERT INTO [ServiceHistory]
+VALUES ('Full'),
+        ('Partial'),
+        ('Not Available');
+
+INSERT INTO [Status]
+VALUES ('Live'),
+        ('Sold'),
+        ('Hold');
+
+
+
 
 	   
 

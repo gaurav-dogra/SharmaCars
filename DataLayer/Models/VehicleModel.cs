@@ -13,7 +13,7 @@ public class VehicleModel
     public int? Price { get; set; }
     public int? PreviousOwners { get; set; }
     public int? ServiceHistory { get; set; }
-    public bool? IsBrandNew { get; set; }
+    public bool? BrandNew { get; set; }
     public int? BodyType { get; set; }
     public int? Doors { get; set; }
     public int? Seats { get; set; }

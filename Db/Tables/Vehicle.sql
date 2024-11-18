@@ -1,9 +1,9 @@
 ﻿CREATE TABLE [dbo].[Vehicle]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY (1, 1), 
-    [Model] NVARCHAR(50) NOT NULL,
+    [HeadlineSummary] NVARCHAR(100) NOT NULL,
     [Status] INT NOT NULL DEFAULT 1,
-    [HeadlineSummary] NVARCHAR(100) NULL, 
+    [Model] NVARCHAR(100) NULL, 
     [Mileage] INT NULL, 
     [RegisterationYear] INT NULL, 
     [Gearbox] INT NULL, 

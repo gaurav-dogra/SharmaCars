@@ -72,7 +72,6 @@
     <Build Include="StoredProcedures\UserHash\spUserHash_Get.sql" />
     <Build Include="StoredProcedures\UserHash\spUserHash_Update.sql" />
     <Build Include="StoredProcedures\UserHash\spUserHash_Insert.sql" />
-    <Build Include="Tables\VehicleType.sql" />
     <Build Include="Tables\RegisterationYear.sql" />
     <Build Include="Tables\GearboxType.sql" />
     <Build Include="Tables\FuelType.sql" />

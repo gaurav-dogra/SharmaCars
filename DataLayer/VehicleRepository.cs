@@ -1,7 +1,7 @@
 ﻿using Dapper;
-using DataLayer.Models;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using DataLayer.Entity;
 
 namespace DataLayer
 {
@@ -10,12 +10,12 @@ namespace DataLayer
         private IDbConnection _db = new SqlConnection(connString);
 
 
-        public Task<VehicleModel> GetAsync(int id)
+        public Task<Vehicle> GetAsync(int id)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<IEnumerable<VehicleModel>> GetAllAsync()
+        public async Task<IEnumerable<Vehicle>> GetAllAsync()
         {
             using (_db)
             {
@@ -42,17 +42,17 @@ namespace DataLayer
                                         [Colour], 
                                         [DriveType] 
                                     From [dbo].Vehicle";
-                return await _db.QueryAsync<VehicleModel>(query);
+                return await _db.QueryAsync<Vehicle>(query);
             }
 
         }
 
-        public Task<VehicleModel> AddAsync(VehicleModel vehicle)
+        public Task<Vehicle> AddAsync(Vehicle vehicle)
         {
             throw new NotImplementedException();
         }
 
-        public Task<VehicleModel> UpdateAsync(VehicleModel vehicle)
+        public Task<Vehicle> UpdateAsync(Vehicle vehicle)
         {
             throw new NotImplementedException();
         }

@@ -1,7 +1,7 @@
-﻿using DataLayer.Models;
+﻿using DataLayer.Entity;
 
 namespace DataLayer.Contracts;
 
-public interface IVehicleRepository : IGenericRepository<VehicleModel>
+public interface IVehicleRepository : IGenericRepository<Vehicle>
 {
 }

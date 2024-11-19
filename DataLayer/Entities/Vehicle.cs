@@ -1,6 +1,6 @@
-﻿namespace DataLayer.Models;
+﻿namespace DataLayer.Entity;
 
-public class VehicleModel
+public class Vehicle
 {
     public int Id { get; set; }
     public string HeadlineSummary { get; set; }

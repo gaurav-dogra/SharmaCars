@@ -1,9 +1,9 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
 using System.Data;
-using DataLayer.Entity;
+using DataLayer.Entities;
 
-namespace DataLayer
+namespace DataLayer.Repositories
 {
     public class VehicleRepository(string connString) : IVehicleRepository
     {

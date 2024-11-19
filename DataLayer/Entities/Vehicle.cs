@@ -1,4 +1,4 @@
-﻿namespace DataLayer.Entity;
+﻿namespace DataLayer.Entities;
 
 public class Vehicle
 {

@@ -1,4 +1,4 @@
-﻿using DataLayer.Entity;
+﻿using DataLayer.Entities;
 
 namespace DataLayer.Contracts;
 

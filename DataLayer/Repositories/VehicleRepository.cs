@@ -1,65 +1,46 @@
 ﻿using Dapper;
 using Microsoft.Data.SqlClient;
 using System.Data;
+using DataLayer.Contracts;
 using DataLayer.Entities;
+using Microsoft.Extensions.Configuration;
 
-namespace DataLayer.Repositories
+namespace DataLayer.Repositories;
+
+public class VehicleRepository(IConfiguration configuration) : IVehicleRepository
 {
-    public class VehicleRepository(string connString) : IVehicleRepository
+
+    private readonly IConfiguration _configuration = configuration;
+
+    public async Task<Vehicle> GetByIdAsync(int id)
     {
-        private IDbConnection _db = new SqlConnection(connString);
+        const string sql = "SELECT * FROM Vehicle WHERE Id = @Id";
+        await using var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+        connection.Open();
+        return await connection.QuerySingleOrDefaultAsync<Vehicle>(sql, new { Id = id });
+    }
 
+    public async Task<IReadOnlyList<Vehicle>> GetAllAsync()
+    {
+        const string sql = "SELECT * FROM Vehicle";
+        await using var connection = new SqlConnection(configuration.GetConnectionString("DefaultConnection"));
+        connection.Open();
+        var result = await connection.QueryAsync<Vehicle>(sql);
+        return result.ToList();
+    }
 
-        public Task<Vehicle> GetAsync(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<int> AddAsync(Vehicle entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        public async Task<IEnumerable<Vehicle>> GetAllAsync()
-        {
-            using (_db)
-            {
-                const string query = @"Select 
-                                        [Id],
-                                        [HeadlineSummary], 
-                                        [Model], 
-                                        [Mileage], 
-                                        [RegistrationYear], 
-                                        [Gearbox],
-                                        [FuelType], 
-                                        [Price], 
-                                        [PreviousOwners], 
-                                        [ServiceHistory], 
-                                        [BrandNew], 
-                                        [BodyType],
-                                        [Doors], 
-                                        [Seats], 
-                                        [Category], 
-                                        [EmissionClass], 
-                                        [EngineCapacity], 
-                                        [BatteryRange], 
-                                        [Description],
-                                        [Colour], 
-                                        [DriveType] 
-                                    From [dbo].Vehicle";
-                return await _db.QueryAsync<Vehicle>(query);
-            }
+    public async Task<int> UpdateAsync(Vehicle entity)
+    {
+        throw new NotImplementedException();
+    }
 
-        }
-
-        public Task<Vehicle> AddAsync(Vehicle vehicle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<Vehicle> UpdateAsync(Vehicle vehicle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Remove(int id)
-        {
-            throw new NotImplementedException();
-        }
+    public async Task<int> DeleteAsync(int id)
+    {
+        throw new NotImplementedException();
     }
 }

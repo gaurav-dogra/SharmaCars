@@ -13,7 +13,7 @@ public class Vehicle
     public int? Price { get; set; }
     public int? PreviousOwners { get; set; }
     public int? ServiceHistory { get; set; }
-    public bool? BrandNew { get; set; }
+    public bool? IsBrandNew { get; set; }
     public int? BodyType { get; set; }
     public int? Doors { get; set; }
     public int? Seats { get; set; }
@@ -24,5 +24,7 @@ public class Vehicle
     public string? Description { get; set; }
     public int? Colour { get; set; }
     public int? DriveType { get; set; }
+    public int? NumberOfKeys { get; set; }
+    public bool? IsUlezCompliant { get; set; }
 
 }

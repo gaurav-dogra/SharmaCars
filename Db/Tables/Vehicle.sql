@@ -22,6 +22,8 @@
     [Description] NVARCHAR(1000) NULL, 
     [Colour] INT NULL, 
     [DriveType] INT NULL, 
+    [NumberOfKeys] INT NULL,
+    [UlezCompliant] BIT NULL,
     FOREIGN KEY (RegisterationYear) REFERENCES RegisterationYear(Id),
     FOREIGN KEY (Gearbox) REFERENCES GearboxType(Id),
     FOREIGN KEY (FuelType) REFERENCES FuelType(Id),

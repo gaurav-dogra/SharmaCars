@@ -94,7 +94,7 @@ INSERT INTO [GearboxType]
 VALUES ('Automatic'),
 	   ('Manual');
 
-INSERT INTO [RegisterationYear]
+INSERT INTO [RegistrationYear]
 VALUES ('1980'),
        ('1981'),
        ('1982'),

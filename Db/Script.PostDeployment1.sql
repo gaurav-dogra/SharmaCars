@@ -17,8 +17,8 @@ VALUES	('Convertible'),
 		('Camper'),
 		('Limousine'),
 		('Minibus'),
-		('Van');
-		-- ('Other');
+		('Van'),
+		('Other');
 
 INSERT INTO [CategoryType] 
 VALUES	('A'), 
@@ -42,8 +42,8 @@ VALUES	('Black'),
 		('Orange'),
 		('Pink'),
 		('Purple'),
-		('Yellow');
-		-- ('Other'); ??
+		('Yellow'),
+		('Other'); 
 
 INSERT INTO [DriveType]
 VALUES ('Four Wheel Drive'),

@@ -1,14 +1,13 @@
-﻿namespace Backend.Entities;
+﻿namespace Backend.Dtos;
 
-public class Vehicle
+public class VehicleDto
 {
-    public int Id { get; set; }
     public required string Summary { get; set; }
     public bool IsReadyForSale { get; set; }
     public string? Model { get; set; }
     public int? Mileage { get; set; }
-    public string? Registration { get; set; }
     public int? RegistrationYear { get; set; }
+    public string? Registration { get; set; }
     public int? GearboxType { get; set; }
     public int? FuelType { get; set; }
     public int? Price { get; set; }
@@ -27,5 +26,4 @@ public class Vehicle
     public int? DriveType { get; set; }
     public int? NoOfKeys { get; set; }
     public bool? IsUlezCompliant { get; set; }
-
 }

@@ -1,3 +1,6 @@
+using Backend.Context;
+using Backend.Contracts;
+using Backend.Repositories;
 using Infra;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -7,6 +10,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddInfrastructure();
+builder.Services.AddSingleton<DapperContext>();
+builder.Services.AddScoped<IVehicleRepository, VehicleRepository>();
 builder.Services.AddControllers();
 
 var app = builder.Build();

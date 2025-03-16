@@ -7,7 +7,7 @@ namespace Backend.Context;
 public class DapperContext
 {
     private readonly IConfiguration _configuration;
-    private readonly IConfiguration _connectionString;
+    private readonly string _connectionString;
 
     public DapperContext(IConfiguration configuration)
     {

@@ -24,12 +24,24 @@ public class VehicleRepository(DapperContext context) : IVehicleRepository
         return vehicle;
     }
 
-    public async Task<Vehicle> AddVehicle(VehicleAddDto vehicle)
+    public async Task<Vehicle> AddVehicle(VehicleDto vehicle)
     {
-        throw new NotImplementedException();
+        const string query = "INSERT INTO Vehicles (Summary, IsReadyForSale, Model," +
+                             "Mileage, RegistrationYear, GearboxType, FuelType," +
+                             "Price, NoOfPreviousOwners, ServiceHistory, IsBrandNew, " +
+                             "BodyType, NoOfDoors, NoOfSeats, Category, EmissionClass" +
+                             "EngineCapacity, BatteryRange, Description, Colour," +
+                             "DriveType, NoOfKeys, IsUlezCompliant) " +
+                             "VALUES" +
+                             "(@Summary, @IsReadyForSale, @Model, " +
+                             "@Mileage, @RegistrationYear, @GearboxType, @FuelType," +
+                             "@Price, @NoOfPreviousOwners, @ServiceHistory, @IsBrandNew, " +
+                             "@BodyType, @NoOfDoors, @NoOfSeats, @Category, @EmissionClass" +
+                             "@EngineCapacity, @BatteryRange, @Description, @Colour," +
+                             "@DriveType, @NoOfKeys, @IsUlezCompliant)";
     }
 
-    public async Task UpdateVehicle(int id, VehicleUpdateDto vehicle)
+    public async Task UpdateVehicle(int id, VehicleDto vehicle)
     {
         throw new NotImplementedException();
     }

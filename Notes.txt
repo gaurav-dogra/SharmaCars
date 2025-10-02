@@ -1,0 +1,16 @@
+- Set up .Net 8 Web API
+	- Create endpoints (Api.csproj)
+	- Connect Dapper to DB (Infra.csproj)
+	- Models & Interfaces (Core.csproj)
+- Frontend (React + TypeScript)
+	- Create React App with typescript
+	- Axios or Fetch for API calls?(what is this)
+	- MUI or Ant Design for faster devlopment(why not bootstrap)
+- Db
+	- PostgreSQL (open source, no licensing)
+	- Dapper (to practice some sql)
+- Cloud(Thinking in progress) 
+	- Azure app service for backend
+	- Azure blob storage for images
+	- Azure Static web Apps for React
+

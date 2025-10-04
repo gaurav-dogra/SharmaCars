@@ -13,4 +13,8 @@
 	- Azure app service for backend
 	- Azure blob storage for images
 	- Azure Static web Apps for React
+- Recommendations
+	- Use transactions for creating a vehicle + images
+	- Add Audit (CreatedAt/UpdatedAt)
+	- Use a migration tool (DbUp or FluentMigrator), since Dapper doesn't manage schema
 

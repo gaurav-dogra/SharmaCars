@@ -7,8 +7,9 @@ CREATE TABLE IF NOT EXISTS vehicle
     summary VARCHAR(100) NOT NULL,
     description VARCHAR(5000) NULL,
     
+    make VARCHAR(100) NULL REFERENCES make_type(id),
     model VARCHAR(100) NULL,
-    status SMALLINT NOT NULL DEFAULT 0,
+    status SMALLINT NULL REFERENCES status(id),
 
     gearbox_type SMALLINT NULL REFERENCES gearbox_type(id),
     fuel_type SMALLINT NULL REFERENCES fuel_type(id),
@@ -55,7 +56,7 @@ CREATE INDEX IF NOT EXISTS ix_vehicle_year ON vehicle(first_registration_year);
 CREATE INDEX IF NOT EXISTS ix_vehicle_facets ON vehicle(fuel_type, gearbox_type, body_type, drive_type);
 
 CREATE OR REPLACE FUNCTION set_updated_at()
-RETURNS TRIGGER LANGUAGE plpsql AS $$
+RETURNS TRIGGER LANGUAGE plpgsql AS $$
 BEGIN
     NEW.updated_at := NOW();
     RETURN NEW;

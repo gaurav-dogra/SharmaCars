@@ -12,37 +12,39 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "database", "database", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tables", "Tables", "{A49FD6D3-37CF-4B57-8C13-9F30FE0B72FE}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "schema", "schema", "{A49FD6D3-37CF-4B57-8C13-9F30FE0B72FE}"
 	ProjectSection(SolutionItems) = preProject
-		Database\Tables\001_body_type.sql = Database\Tables\001_body_type.sql
-		Database\Tables\002_category_type.sql = Database\Tables\002_category_type.sql
-		Database\Tables\003_Colour.sql = Database\Tables\003_Colour.sql
-		Database\Tables\004_drive_type.sql = Database\Tables\004_drive_type.sql
-		Database\Tables\005_emission_standard_type.sql = Database\Tables\005_emission_standard_type.sql
-		Database\Tables\006_fuel_type.sql = Database\Tables\006_fuel_type.sql
-		Database\Tables\007_gearbox_type.sql = Database\Tables\007_gearbox_type.sql
-		Database\Tables\008_service_history_type.sql = Database\Tables\008_service_history_type.sql
-		Database\Tables\009_Status.sql = Database\Tables\009_Status.sql
-		Database\Tables\010_Vehicle.sql = Database\Tables\010_Vehicle.sql
-		Database\Tables\011_vehicle_images.sql = Database\Tables\011_vehicle_images.sql
+		Database\Schema\001_body_type.sql = Database\Schema\001_body_type.sql
+		Database\Schema\002_category_type.sql = Database\Schema\002_category_type.sql
+		Database\Schema\003_colour.sql = Database\Schema\003_colour.sql
+		Database\Schema\004_drive_type.sql = Database\Schema\004_drive_type.sql
+		Database\Schema\005_emission_standard_type.sql = Database\Schema\005_emission_standard_type.sql
+		Database\Schema\006_fuel_type.sql = Database\Schema\006_fuel_type.sql
+		Database\Schema\007_gearbox_type.sql = Database\Schema\007_gearbox_type.sql
+		Database\Schema\008_service_history_type.sql = Database\Schema\008_service_history_type.sql
+		Database\Schema\009_status.sql = Database\Schema\009_status.sql
+		Database\Schema\010_make.sql = Database\Schema\010_make.sql
+		Database\Schema\011_vehicle_images.sql = Database\Schema\011_vehicle_images.sql
+		Database\Schema\012_vehicle.sql = Database\Schema\012_vehicle.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Initial Seed", "Initial Seed", "{85E1F66E-AEE6-4713-B3CE-97642FDBFD22}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seed", "seed", "{85E1F66E-AEE6-4713-B3CE-97642FDBFD22}"
 	ProjectSection(SolutionItems) = preProject
-		Database\Initial Seed\001_body_type.sql = Database\Initial Seed\001_body_type.sql
-		Database\Initial Seed\002_category_type.sql = Database\Initial Seed\002_category_type.sql
-		Database\Initial Seed\003_colour.sql = Database\Initial Seed\003_colour.sql
-		Database\Initial Seed\004_drive_type.sql = Database\Initial Seed\004_drive_type.sql
-		Database\Initial Seed\005_emission_standard_type.sql = Database\Initial Seed\005_emission_standard_type.sql
-		Database\Initial Seed\006_fuel_type.sql = Database\Initial Seed\006_fuel_type.sql
-		Database\Initial Seed\007_gearbox_type.sql = Database\Initial Seed\007_gearbox_type.sql
-		Database\Initial Seed\008_service_history_type.sql = Database\Initial Seed\008_service_history_type.sql
-		Database\Initial Seed\009_status.sql = Database\Initial Seed\009_status.sql
-		Database\Initial Seed\010_vehicle.sql = Database\Initial Seed\010_vehicle.sql
-		Database\Initial Seed\011_vehicle_images.sql = Database\Initial Seed\011_vehicle_images.sql
+		Database\Seed\001_body_type.sql = Database\Seed\001_body_type.sql
+		Database\Seed\002_category_type.sql = Database\Seed\002_category_type.sql
+		Database\Seed\003_colour.sql = Database\Seed\003_colour.sql
+		Database\Seed\004_drive_type.sql = Database\Seed\004_drive_type.sql
+		Database\Seed\005_emission_standard_type.sql = Database\Seed\005_emission_standard_type.sql
+		Database\Seed\006_fuel_type.sql = Database\Seed\006_fuel_type.sql
+		Database\Seed\007_gearbox_type.sql = Database\Seed\007_gearbox_type.sql
+		Database\Seed\008_service_history_type.sql = Database\Seed\008_service_history_type.sql
+		Database\Seed\009_status.sql = Database\Seed\009_status.sql
+		Database\Seed\010_make.sql = Database\Seed\010_make.sql
+		Database\Seed\011_vehicle.sql = Database\Seed\011_vehicle.sql
+		Database\Seed\012_vehicle_images.sql = Database\Seed\012_vehicle_images.sql
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DDL updates", "DDL updates", "{76C8EC91-32B7-4359-9598-5F8C59E3FCA9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migrations", "migrations", "{76C8EC91-32B7-4359-9598-5F8C59E3FCA9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+    db:
+        image: postgres:16
+        container_name: sharma_cars_db
+        restart: always
+        environment:
+            POSTGRES_USER: admin
+            POSTGRES_PASSWORD: admin
+            POSTGRES_DB: sharma_cars
+        ports:
+            - "5432:5432"
+        volumes:
+            - pgdata: /var/lib/postgresql/data
+            - ./db/schema.sql:/docker-entrypoint-initdb.d/schema.sql:ro
+
+    pgadmin:
+        image: dpage/pgadmin4
+        container_name: pgadmin
+        restart: always
+        environment: 
+            PGADMIN_DEFAULT_EMAIL: gaurav.dogra@protection.aviva.com    
+            PGADMIN_DEFAULT_PASSWORD: admin
+        ports:
+            - "5050:80"
+volumes:
+    pgdata:    

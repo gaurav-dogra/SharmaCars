@@ -7,7 +7,7 @@ CREATE TABLE IF NOT EXISTS vehicle
     summary VARCHAR(100) NOT NULL,
     description VARCHAR(5000) NULL,
     
-    make VARCHAR(100) NULL REFERENCES make_type(id),
+    make VARCHAR(100) NULL REFERENCES make(id),
     model VARCHAR(100) NULL,
     status SMALLINT NULL REFERENCES status(id),
 
@@ -49,6 +49,11 @@ CREATE TABLE IF NOT EXISTS vehicle
 
 CREATE INDEX IF NOT EXISTS ux_vehicle_registration
     ON vehicle (registration) WHERE registration IS NOT NULL;
+
+CREATE UNIQUE INDEX ux_vehicle_registration_live
+ON vehicle (registration)
+WHERE registration IS NOT NULL
+AND status IN (0, 1); -- Draft, Active
 
 CREATE INDEX IF NOT EXISTS ix_vehicle_price ON vehicle(price);
 CREATE INDEX IF NOT EXISTS ix_vehicle_mileage ON vehicle(mileage);

@@ -48,6 +48,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migrations", "migrations", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharmaCars.Core", "SharmaCars.Core\SharmaCars.Core.csproj", "{3F11DF97-F77C-42D6-B11F-4B16325CF722}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharmaCars.Infra", "SharmaCars.Infra\SharmaCars.Infra.csproj", "{6841BDA7-6D3D-4856-9A8B-9A7E94C560C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -62,6 +64,10 @@ Global
 		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6841BDA7-6D3D-4856-9A8B-9A7E94C560C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6841BDA7-6D3D-4856-9A8B-9A7E94C560C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6841BDA7-6D3D-4856-9A8B-9A7E94C560C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6841BDA7-6D3D-4856-9A8B-9A7E94C560C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

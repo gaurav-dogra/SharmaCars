@@ -1,7 +1,7 @@
 - Set up .Net 10 Web API
-	- Endpoints (Api.csproj)
-	- Connect Dapper to DB (Infra.csproj)
-	- Models & Interfaces (Core.csproj)
+	- Controller CRUD for Car Sales portal (Api.csproj)
+	- Another Controller for Car requests
+	- Test Project
 
 - Frontend (React + TypeScript)
 	- Create React App with typescript
@@ -11,9 +11,11 @@ Databases
 	- Dapper (to practice some sql)
 	
 - Recommendations
-	- Use transactions for creating a vehicle + images
 	- Add Audit (CreatedAt/UpdatedAt)
 	- All pictures same size when uploaded
 	- As much on cloud as possible
 	- S3 for pictures
 	- API on lambda
+	- Use Github Action to run unit tests & Linting
+
+

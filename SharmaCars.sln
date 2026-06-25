@@ -46,6 +46,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "seed", "seed", "{85E1F66E-A
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "migrations", "migrations", "{76C8EC91-32B7-4359-9598-5F8C59E3FCA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharmaCars.Core", "SharmaCars.Core\SharmaCars.Core.csproj", "{3F11DF97-F77C-42D6-B11F-4B16325CF722}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -56,6 +58,10 @@ Global
 		{12D5BEA3-D63E-48E5-AD84-D6261BC0E193}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12D5BEA3-D63E-48E5-AD84-D6261BC0E193}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D5BEA3-D63E-48E5-AD84-D6261BC0E193}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F11DF97-F77C-42D6-B11F-4B16325CF722}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

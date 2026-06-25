@@ -1,21 +1,28 @@
 - Set up .Net 10 Web API
-	- Controller CRUD for Car Sales portal (Api.csproj)
+	- API Project - SharmaCarsAPI
+	- Database Layer project - SharmaCars.Infra
+	- Models and Interfaces - SharmaCars.Core
 	- Another Controller for Car requests
 	- Test Project
 
 - Frontend (React + TypeScript)
-	- Create React App with typescript
+	- Create React App with Typescript
 
 Databases	
 	- Postgres (open source, no licensing)
 	- Dapper (to practice some sql)
+	- Neon.tech(Postgres cloud service) at the start, moving to AWS later on
+
+Cloud
+	- Aws Lambda for API
+	- AWS Parameter store for secrets
+	- AWS S3 for pictures
+	- AWS RDS
 	
-- Recommendations
+- Some implementation details
 	- Add Audit (CreatedAt/UpdatedAt)
 	- All pictures same size when uploaded
 	- As much on cloud as possible
-	- S3 for pictures
-	- API on lambda
-	- Use Github Action to run unit tests & Linting
+	- Use Github Actions OR some AWS service to run unit tests & Linting? 
 
 

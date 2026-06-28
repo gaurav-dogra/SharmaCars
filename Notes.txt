@@ -1,11 +1,11 @@
-- Set up .Net 10 Web API
+Set up .Net 10 Web API
 	- API Project - SharmaCarsAPI
 	- Database Layer project - SharmaCars.Infra
 	- Models and Interfaces - SharmaCars.Core
 	- Another Controller for Car requests
 	- Test Project
 
-- Frontend (React + TypeScript)
+Frontend (React + TypeScript)
 	- Create React App with Typescript
 
 Databases	
@@ -19,7 +19,7 @@ Cloud
 	- AWS S3 for pictures
 	- AWS RDS
 	
-- Some implementation details
+Some implementation details
 	- Add Audit (CreatedAt/UpdatedAt)
 	- All pictures same size when uploaded
 	- As much on cloud as possible
